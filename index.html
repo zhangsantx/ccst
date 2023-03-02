@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.12.1/css/all.css" />
+    <link rel="stylesheet" href="libs/glide/glide.core.min.css" />
+    <link rel="stylesheet" href="libs/glide/glide.theme.min.css" />
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style/base.css" />
+    <link rel="stylesheet" href="style/common.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <title>我的城科 | 一站式校园综合服务平台</title>
+  </head>
+  <body>
+    <header class="open">
+      <div class="logo">
+        <img class="logo-img" src="images/ccst-logo-w.png" />
+      </div>
+      <nav>
+        <a class="link-item" href="#home">首页</a>
+        <a class="link-item" href="#about-us">功能矩阵</a>
+        <a class="link-item" href="#showcases">产品展示</a>
+        <a class="link-item" href="#service">资源与服务</a>
+        <a class="link-item" href="#cmap">营运数据</a>
+        <!-- <a href="#team-intro">团队介绍</a> -->
+        <!-- <a href="#"><i class="fas fa-search"></i></a> -->
+      </nav>
+      <!-- 折叠导航按钮，屏幕缩小时使用 -->
+      <div class="burger">
+        <div class="burger-line1"></div>
+        <div class="burger-line2"></div>
+        <div class="burger-line3"></div>
+      </div>
+    </header>
+    <!-- 定义轮播图 -->
+    <div id="home" class="glide">
+      <!-- 轮播图轨迹 -->
+      <div class="glide__track" data-glide-el="track">
+        <div class="glide__slides">
+          <!-- 第一个轮播图 -->
+          <div class="glide__slide">
+            <!-- 标题 -->
+            <div class="slide-caption">
+              <h1>我的城科 · WECCST</h1>
+              <h3>一站式校园综合服务平台</h3>
+              <button class="explore-btn">探索更多</button>
+            </div>
+            <div class="backdrop"></div>
+            <!-- 视频静音自动播放循环播放  -->
+            <video src="videos/banner.mp4" muted autoplay loop></video>
+          </div>
+        </div>
+      </div>
+      <!-- 切换轮播图按钮 -->
+      <div class="glide__arrows" data-glide-el="controls">
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+        </div>
+      </div>
+    </div>
+    <div class="content-warp">
+      <!-- 功能矩阵 -->
+      <div id="about-us" class="module about-us">
+        <div class="module-info">
+          <h2 class="title">功能矩阵</h2>
+          <p class="intro">我的城科深耕一站式服务理念，潜心打造适合用户的诸多功能<br /><br />超多功能，尽在 #我的城科</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <i class="fas fa-gamepad"></i>
+            <h4 class="feature-title">课表查询</h4>
+            <p class="feature-content">简洁大方的课表UI设计，可以使同学们清晰的查看课程排布，支持切换周数、下拉快速刷新、作息时间表查看、个性换肤等。</p>
+          </div>
+          <div class="feature">
+            <i class="fab fa-youtube"></i>
+            <h4 class="feature-title">出行地图</h4>
+            <p class="feature-content">全方位的校园地图，超多地点标注，分门别类，</p>
+          </div>
+          <div class="feature">
+            <i class="fab fa-internet-explorer"></i>
+            <h4 class="feature-title">扫码乘车</h4>
+            <p class="feature-content">一键扫码即可乘车，快捷便利。</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-store"></i>
+            <h4 class="feature-title">成绩查询</h4>
+            <p class="feature-content">
+              工具箱模块中支持教务系统成绩查询、四六级考试成绩查询、教师资格证查询、计算机等级考试查询等，从此告别到处查询成绩的窘迫。
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <h4 class="feature-title">校历查看</h4>
+            <p class="feature-content">第一时间查看档期啊学期校历</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-database"></i>
+            <h4 class="feature-title">校园电话</h4>
+            <p class="feature-content">快速查看校园内各部门联系电话，支持一键复制和呼叫。</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <h4 class="feature-title">更多</h4>
+            <p class="feature-content">更多功能尽在 #我的城科，微信搜索 #我的城科 小程序，既可体验。</p>
+          </div>
+        </div>
+      </div>
+      <!-- 产品展示 -->
+      <div id="showcases" class="module-big showcases">
+        <div class="module-info">
+          <h2 class="title">产品展示</h2>
+          <div class="filter-btns">
+            <button class="filter-btn active" data-filter="*">全部</button>
+            <button class="filter-btn" data-filter=".course">课表</button>
+            <button class="filter-btn" data-filter=".go">校园出行</button>
+            <button class="filter-btn" data-filter=".tool">工具箱</button>
+          </div>
+        </div>
+        <div class="cases">
+          <div class="case-item course">
+            <img src="images/课表.png" alt="" />
+          </div>
+          <div class="case-item course">
+            <img src="images/作息时间.png" alt="" />
+          </div>
+          <div class="case-item course">
+            <img src="images/当前周.png" alt="" />
+          </div>
+          <div class="case-item go">
+            <img src="images/校园出行.png" alt="" />
+          </div>
+          <div class="case-item go">
+            <img src="images/乘车码.png" alt="" />
+          </div>
+
+          <div class="case-item tool">
+            <img src="images/工具箱.png" alt="" />
+          </div>
+
+          <div class="case-item tool">
+            <img src="images/成绩查询.png" alt="" />
+          </div>
+          <div class="case-item tool">
+            <img src="images/校历.png" alt="" />
+          </div>
+          <div class="case-item tool">
+            <img src="images/校园时间.png" alt="" />
+          </div>
+          <div class="case-item tool">
+            <img src="images/校园电话.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- 营运数据 -->
+      <div id="cmap" class="module map">
+        <div class="module-info">
+          <h2 class="title">营运数据</h2>
+          <p class="intro">上线<i>200+</i>天，累计用户突破<i>1000+</i></p>
+        </div>
+        <img src="images/我的城科.png" style="border-radius: 20px" class="cmap" />
+      </div>
+      <!-- 数据统计 -->
+      <div id="data-session" class="module-big data-section">
+        <div class="data-piece">
+          <i class="fas fa-user-secret"></i>
+          <div class="data-desc">平稳运营天数</div>
+          <div class="num">200+</div>
+        </div>
+
+        <div class="data-piece">
+          <i class="fas fa-satellite"></i>
+          <div class="data-desc">累计打开数</div>
+          <div class="num">100000+</div>
+        </div>
+
+        <div class="data-piece">
+          <i class="fas fa-server"></i>
+          <div class="data-desc">用户留存率</div>
+          <div class="num">99%</div>
+        </div>
+
+        <div class="data-piece">
+          <i class="fas fa-user-tie"></i>
+          <div class="data-desc">累计用户数</div>
+          <div class="num">1000+</div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-menus">
+        <div class="contact-us">
+          <p class="menu-title">联系我们</p>
+          <p>邮 箱：sancoder@163.com</p>
+        </div>
+        <div class="service-menu footer-menu"></div>
+        <div class="showcase-menu footer-menu"></div>
+        <div class="activity-menu footer-menu">
+          <p class="menu-title">产品动态</p>
+          <ul class="menu-items">
+            <li><a href="#">更新日志</a></li>
+          </ul>
+        </div>
+        <div class="help-menu footer-menu">
+          <p class="menu-title">帮助与支持</p>
+          <ul class="menu-items">
+            <li><a href="#">支持中心</a></li>
+            <li><a href="#">联系客服</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copys">
+        <p class="rights">© Copyright 2022-2023 我的城科 版权所有</p>
+      </div>
+      <div class="scrollToTop">
+        <a href="#home"><i class="fas fa-chevron-up"></i></a>
+      </div>
+    </footer>
+
+    <script src="libs/anime/anime.min.js"></script>
+    <script src="libs/glide/glide.min.js"></script>
+    <script src="libs/isotope/isotope.pkgd.min.js"></script>
+    <script src="libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="libs/scrollReveal/scrollreveal.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

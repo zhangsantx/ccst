@@ -1,0 +1,87 @@
+.content-warp {
+  // 通用模块
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .module {
+    max-width: 1180px;
+    padding: 80px;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+
+      /* 区域的左右内边距设置为40象素 */
+      padding: 40px;
+    }
+  }
+
+  // 全屏宽度模块
+  .module-mid {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: grid;
+    justify-items: center;
+  }
+
+  // 全屏宽度模块
+  .module-big {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: grid;
+    justify-items: center;
+  }
+
+  // 标题+简介
+  .module-info {
+    display: grid;
+    justify-items: center;
+
+    // 标题
+    .title {
+      width: auto;
+      font-size: 34px;
+      color: var(--text-color-darker);
+      text-align: center;
+
+      @media (max-width: 576px) {
+        font-size: 28px;
+      }
+    }
+
+
+    // 标题-下划线
+    .title::after {
+      content: '';
+      display: block;
+      width: 80%;
+      height: 4px;
+      background-color: var(--primary-color);
+      margin-top: 14px;
+      transform: translateX(10%);
+    }
+
+    // 简介
+    .intro {
+      margin: 20px 0 60px 0;
+      font-size: 20px;
+      color: var(--text-color-dark-gray);
+      text-align: center;
+
+      @media (max-width: 768px) {
+
+        font-size: 18px;
+      }
+    }
+
+    // 简介-突出部分
+    .intro i {
+      color: var(--primary-color);
+      font-weight: 600;
+      font-style: normal;
+      padding: 0 5px;
+    }
+  }
+}

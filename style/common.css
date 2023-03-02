@@ -1,0 +1,71 @@
+.content-warp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-warp .module {
+  max-width: 1180px;
+  padding: 80px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .content-warp .module {
+    /* 区域的左右内边距设置为40象素 */
+    padding: 40px;
+  }
+}
+.content-warp .module-mid {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 80px 0;
+  display: grid;
+  justify-items: center;
+}
+.content-warp .module-big {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 80px 0;
+  display: grid;
+  justify-items: center;
+}
+.content-warp .module-info {
+  display: grid;
+  justify-items: center;
+}
+.content-warp .module-info .title {
+  width: auto;
+  font-size: 34px;
+  color: var(--text-color-darker);
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .content-warp .module-info .title {
+    font-size: 28px;
+  }
+}
+.content-warp .module-info .title::after {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin-top: 14px;
+  transform: translateX(10%);
+}
+.content-warp .module-info .intro {
+  margin: 20px 0 60px 0;
+  font-size: 20px;
+  color: var(--text-color-dark-gray);
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .content-warp .module-info .intro {
+    font-size: 18px;
+  }
+}
+.content-warp .module-info .intro i {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-style: normal;
+  padding: 0 5px;
+}
